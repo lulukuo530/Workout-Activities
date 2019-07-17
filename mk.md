@@ -1,3 +1,5 @@
+Workout Activities Visualisation
+================================
 
   - [Prerequisites](#prerequisites)
 
@@ -21,7 +23,9 @@ ggplot(data) +
   labs(x="Time (minutes)", y="Day of Week", title="Workout Activity Timeline") 
 ```
 
-![](plots/plot1-1.png)<!-- --> \> Generally the bars shoudldn’t elapsed.
+![](plots/plot1-1.png)
+
+> Generally the bars shoudldn’t elapsed.
 Since this is dummy data, this will happen. From this plot we can
 observe how long each activity takes between weekdays.
 
@@ -33,7 +37,9 @@ ggplot(data) +
   facet_grid(Activity~.)
 ```
 
-![](plots/plo2-1.png)<!-- --> \> If we separate the activities, we can
+![](plots/plo2-1.png)
+
+> If we separate the activities, we can
 further identify each exercise activities.
 
 ``` r
@@ -46,6 +52,8 @@ ggplot(data, aes(DOW, month)) +
   theme(strip.background = element_rect("lightsteelblue2")) 
 ```
 
-![](plots/plot3-1.png)<!-- --> \> We user another technique to examine
+![](plots/plot3-1.png)
+
+> We user another technique to examine
 the duration of each activity. We can see that this person tends to
 exercise a lot in July, particularly riding bikes or doing yoga.
